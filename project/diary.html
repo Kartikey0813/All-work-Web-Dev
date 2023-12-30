@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="diary.js" defer></script>
+    <title>Diary Entry</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Diary Entry</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="todo.html">To-Do</a></li>
+            </ul>
+        </nav>
+        <section id="diary">
+            <h2>Diary Entries</h2><!-- Add these buttons above the textarea in the diary section -->
+            <div id="text-edit-buttons">
+                <button id="bold-btn" onclick="toggleBold()">B</button>
+                <button id="underline-btn" onclick="toggleUnderline()">U</button>
+                <label for="fontsize-select">Font Size:</label>
+                <select id="fontsize-select" onchange="changeFontSize()">
+                    <option value="14px">Small</option>
+                    <option value="16px" selected>Normal</option>
+                    <option value="18px">Large</option>
+                </select>
+                <label for="color-input">Text Color:</label>
+                <input type="color" id="color-input" onchange="changeTextColor()" value="#3498db">
+            </div>
+            <textarea id="diary-entry" placeholder="Write your diary entry"></textarea>
+            <button onclick="addDiaryEntry()">Add Entry</button>
+            
+            <!-- Add a separate section for past diary entries -->
+            <div id="past-entries">
+                <h2>Past Diary Entries</h2>
+                <!-- Previously added diary entries will appear here -->
+            </div>
+            
+            
+           
+        </section>
+    </div>
+</body>
+</html>
