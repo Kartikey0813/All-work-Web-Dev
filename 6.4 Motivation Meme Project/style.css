@@ -1,0 +1,18 @@
+*{
+    background-color: black;
+}
+
+#divv {
+    width: 50%;
+    margin-left: 25%;
+    border: 10px solid white ;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+img{
+    width: 100%;
+}
