@@ -5,7 +5,6 @@
 #divv {
     width: 50%;
     margin-left: 25%;
-    border: 10px solid white ;
     color: white;
     font-family: "Libre Baskerville", serif;
     font-style: italic;
@@ -15,4 +14,5 @@
 
 img{
     width: 100%;
+    border: 5px solid white ;
 }
